@@ -11,6 +11,7 @@ users = {
 @app.route("/users/<int:user_id>")
 def get_user(user_id):
     user = users.get(user_id)
+    print(user)
     if user:
         return jsonify(user)
     else:
