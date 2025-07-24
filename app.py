@@ -5,7 +5,8 @@ app = Flask(__name__)
 # Mock user data
 users = {
     1: {"id": 1, "name": "Ajit"},
-    2: {"id": 2, "name": "pratya"}
+    2: {"id": 2, "name": "pratya"},
+    3: {"id": 3, "name": "wals"}
 }
 
 @app.route("/users/<int:user_id>")
