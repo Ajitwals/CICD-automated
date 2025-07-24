@@ -20,4 +20,4 @@ def test_get_non_existing_user(client):
 def test_get_another_user(client):
     response = client.get('/users/2')
     assert response.status_code == 200
-    assert response.json == {"id": 2, "name": "Ravi"}
+    assert response.json == {"id": 2, "name": "pratya"}
